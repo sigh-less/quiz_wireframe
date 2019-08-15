@@ -3,6 +3,17 @@
   font-family: 'Press Start 2P', cursive;
 }
 
+.wire_nav {
+    width: 800px;
+    max-width: 80%;
+    background-color: grey;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    text-align: center;
+    margin: 10% auto;
+}
+
 header{
   border-radius: 10px;
   text-align: center;
@@ -29,10 +40,6 @@ header{
   margin: 0 auto;
   max-width: 500px;
   background-color: brown;
-}
-
-p {
-  color: #00e600;
 }
 
 .start-button{

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <title>Nintendo Character Quiz</title>
+</head>
+<body>
+	<header role="banner">
+	   <h1>Quiz</h1>
+	</header>
+	<main role="main">
+    <section class="start-section">
+			  <p>Ready to play the Nintendo Name Game Quiz? Press Start to test your knowledge</p>
+		  	<input type="button" value="Start" class="start-button js-start-button">
+	  </section>
+	  	
+	  <div class="quiz-box">
+			 <div class="progress-section">
+			    <span class="question-count">Question</span>
+			    <span class="score-card">Score</span>
+			 </div>
+			 
+		  <div class="quiz-section">
+		 	  <form class="questions-form">
+				  <p>Question goes here</p>
+				  <label class="options">
+				    <input  id="option-one" type="radio" name="option-one">
+				    <span></span>
+				  </label>
+				   <label class="options">
+				    <input id="option-two" type="radio" name="option-one">
+				    <span></span>
+				  </label>
+				   <label class="options">
+				    <input id="option-three" type="radio" name="option-one">
+				    <span></span>
+				  </label>
+				   <label class="options">
+				    <input id="option-four" type="radio" name="option-one">
+				    <span></span>
+				  </label>
+				  <input type="button" value="Submit Answer" class="submit-button js-submit-button">
+			  </form>	
+			</div>
+		</div>
+
+		<h2> NOTES: All the screens are here on this page. The navigation will be handled by the javascript logic and will show/hide based on where the user is at in the quiz.<br>
+		I understand from the feedback that the CSS is supposed to be minimial, but I felt I needed to keep what I have for demonstration purposes.<br>
+		There is a section for the pop-up here in the html, but it is currently commented out. The will be populated via JS, as it will show right / wrong for feedback.
+		</h2>
+
+		<!--<section class="feedback">
+				<div class="popup-box">
+				  <button type="button" class="close-button js-close-button">X</button>
+				  <img src="" class="feedback-pic">
+				  <span id="popup-text"></span>
+				</div>
+		</section>
+	-->
+
+		  <section class="end-section">
+		  	<h4></h4>
+		  	<div class="correct">
+		  	  <img src="Luigi.jpg" alt="happy face">
+		  	  <span class="count"></span>
+		  	 </div>
+		  	 <div class="wrong">
+		  	   	<img src="waluigi.jpg" alt="unhappy face">
+		    	  <span class="count"></span>
+		  	 </div>
+		     <input type="button" class="startover-button js-startover-button" value="Start Over">
+		  </section>
+
+  </main>
+</body>
+</html>
